@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1d1a;
+    min-height: 100vh;
+}
+
+.container {
+    width: 400px;
+    background: linear-gradient(180deg, #eaffef, #c9f7d8);
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+    padding-bottom: 30px;
+}
+
+.header {
+    background: #39d46d;
+    padding: 16px;
+    border-radius: 16px 16px 0 0;
+    text-align: center;
+}
+
+.header h1 {
+    color: #0b3d1c;
+    font-size: 20px;
+}
+
+.saldo {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+.saldo span {
+    font-size: 22px;
+    color: #145a32;
+}
+
+.saldoTotal {
+    font-size: 38px;
+    color: #0b3d1c;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+/* BOTÕES */
+.btn {
+    min-width: 140px;
+    padding: 14px 0;
+    border: none;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    white-space: nowrap;
+}
+
+.btn.adicionar {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.btn.remover {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: #eaffef;
+    padding: 25px;
+    border-radius: 16px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+    color: #0b3d1c;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn.confirmar {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.btn.cancelar {
+    background: linear-gradient(135deg, #7f8c8d, #636e72);
+}

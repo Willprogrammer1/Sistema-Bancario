@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Bancário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <h2 id="modalTitle">Título</h2>
+
+    <input type="number" id="valorInput" placeholder="Digite o valor">
+
+    <p class="modal-error" id="modalError"></p>
+
+    <div class="modal-actions">
+      <button class="btn confirmar" onclick="confirmar()">Confirmar</button>
+      <button class="btn cancelar" onclick="fecharModal()">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+            <h1>Meu saldo</h1>
+        </header>
+
+        <div class="saldo">
+            <span>R$</span>
+            <span class="saldoTotal">0.00</span>
+        </div>
+
+        <div class="main">
+            <button class="btn adicionar" onclick="abrirModal('add')">Adicionar</button>
+<button class="btn remover" onclick="abrirModal('remove')">Remover</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
